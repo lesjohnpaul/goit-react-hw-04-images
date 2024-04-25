@@ -1,0 +1,35 @@
+.App {
+  display: flex;
+  flex-direction: column;
+   align-items: center;
+  gap: 32px;
+  padding: 40px 20px;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.App:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.searchbar,
+.imageGallery,
+.button,
+.loader {
+  width: 100%;
+  max-width: 800px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.searchbar:hover,
+.imageGallery:hover,
+.button:hover,
+.loader:hover {
+  transform: scale(1.02);
+}
