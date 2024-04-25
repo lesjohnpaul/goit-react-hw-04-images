@@ -20,12 +20,12 @@
 }
 
 .galleryItem:hover {
-  animation: float 2s infinite;
+  animation: float 2s;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .galleryItem:hover img {
-  animation: pulse 2s infinite;
+  animation: pulse 2s;
   border-color: #76baff;
 }
 
