@@ -27,7 +27,7 @@ const App = () => {
 
         setImages(prev => (currentPage === 1 ? hits : [...prev, ...hits]));
         setIsLoading(false);
-        setIsEnd(images.length + hits.length >= totalHits);
+        setIsEnd((currentPage - 1) * hits.length + hits.length >= totalHits);
       } catch (error) {
         setIsLoading(false);
         setIsError(true);
